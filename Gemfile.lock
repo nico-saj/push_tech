@@ -63,14 +63,21 @@ GEM
     byebug (11.1.3)
     concurrent-ruby (1.1.7)
     crass (1.0.6)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.9.0)
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hkdf (0.3.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    json (2.1.0)
+    jwt (2.2.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -138,6 +145,8 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    serviceworker-rails (0.6.0)
+      railties (>= 3.1)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -166,6 +175,9 @@ GEM
       activesupport (>= 4.2)
       rack-proxy (>= 0.6.1)
       railties (>= 4.2)
+    webpush (1.0.0)
+      hkdf (~> 0.2)
+      jwt (~> 2.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -177,18 +189,22 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  dotenv-rails
   jbuilder (~> 2.7)
+  json
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   sass-rails (>= 6)
+  serviceworker-rails
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
+  webpush
 
 RUBY VERSION
    ruby 2.6.4p104
