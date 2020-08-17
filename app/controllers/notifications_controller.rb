@@ -4,7 +4,7 @@ class NotificationsController < ApplicationController
   def push
     @notification = Notification.new(notification_params)
     @notification.save
-    p send_message
+    send_message
   end
 
   private

@@ -3,7 +3,7 @@
 Rails.application.configure do
   config.serviceworker.routes.draw do
     # map to assets implicitly
-    match "/serviceworker.js" => "serviceworker.js", pack: true
+    match "/serviceworker.js" => "push_notification/serviceworker.js", pack: true
     match "/manifest.json"
 
     # Examples
